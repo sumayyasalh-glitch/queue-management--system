@@ -1,0 +1,266 @@
+.queue-container {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.queue-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.queue-header h1 {
+  color: #0d4d52;
+  font-size: 2rem;
+  margin: 0;
+}
+
+.queue-subtitle {
+  color: #666;
+  margin: 0.5rem 0 0 0;
+}
+
+/* Queue Layout */
+.queue-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Current Token */
+.queue-section {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.section-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.section-title h2 {
+  margin: 0;
+  color: #0d4d52;
+  font-size: 1.3rem;
+}
+
+.count-badge {
+  background: #0d4d52;
+  color: white;
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+/* Current Token Card */
+.current-token-card {
+  background: linear-gradient(135deg, #0d4d52 0%, #0a3a3e 100%);
+  color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.token-number-large {
+  font-size: 4rem;
+  font-weight: 800;
+  margin: 0 0 1rem 0;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.token-details {
+  margin: 1.5rem 0;
+}
+
+.token-info {
+  display: block;
+  margin: 0.75rem 0;
+}
+
+.token-info .label {
+  font-weight: 600;
+  display: block;
+  font-size: 0.9rem;
+  opacity: 0.9;
+  margin-bottom: 0.25rem;
+}
+
+.token-info .value {
+  font-size: 1.1rem;
+  display: block;
+}
+
+.token-status-badge {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  font-weight: 600;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.token-status-badge.serving {
+  background: rgba(255, 0, 0, 0.3);
+}
+
+.no-data {
+  text-align: center;
+  padding: 2rem;
+  color: #999;
+}
+
+/* Queue Stats */
+.queue-stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.stat-box {
+  background: linear-gradient(135deg, #0d4d52 0%, #0a3a3e 100%);
+  color: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.stat-label {
+  font-size: 0.9rem;
+  opacity: 0.9;
+  margin-bottom: 0.5rem;
+}
+
+.stat-value {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+/* Waiting Section */
+.waiting-section {
+  grid-column: 1 / -1;
+}
+
+.queue-table-container {
+  overflow-x: auto;
+}
+
+.queue-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.queue-table thead {
+  background: #f9f9f9;
+}
+
+.queue-table th {
+  padding: 1rem;
+  text-align: left;
+  font-weight: 600;
+  color: #0d4d52;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.queue-table td {
+  padding: 1rem;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.queue-table tbody tr:hover {
+  background: #f9f9f9;
+}
+
+.queue-table tbody tr.next-up {
+  background: #f0f8f9;
+  font-weight: 600;
+}
+
+.position-badge {
+  background: #0d4d52;
+  color: white;
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.token-number {
+  color: #0d4d52;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.status-badge.waiting {
+  background: #fff3cd;
+  color: #856404;
+}
+
+/* Queue Info Box */
+.queue-info {
+  background: #f0f8f9;
+  border-left: 4px solid #0d4d52;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-top: 2rem;
+}
+
+.queue-info h3 {
+  color: #0d4d52;
+  margin: 0 0 1rem 0;
+}
+
+.queue-info ul {
+  margin: 0;
+  padding-left: 1.5rem;
+  color: #666;
+}
+
+.queue-info li {
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .queue-container {
+    padding: 1rem;
+  }
+
+  .queue-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .queue-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .queue-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .token-number-large {
+    font-size: 3rem;
+  }
+
+  .queue-table {
+    font-size: 0.85rem;
+  }
+
+  .queue-table th,
+  .queue-table td {
+    padding: 0.75rem 0.5rem;
+  }
+}
